@@ -17,12 +17,17 @@ public class PostsApiController {
         return postsService.save(requestDto);
     }
 
-    @PutMapping ("/api/v1/posts/{id}") //post-put차이? post넣을 때 결과 다르게 나옴.
+    @PutMapping ("/api/v1/posts/{id}")
     public Long update(@PathVariable Long id, @RequestBody PostsUpdateRequestDto requestDto){
         return postsService.update(id, requestDto);
     }
     @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findByID(@PathVariable Long id){
         return postsService.findById(id);
+    }
+    @DeleteMapping("/api/v1/posts/{id}")
+    public Long delete(@PathVariable Long id){
+        postsService.delete(id);
+        return id;
     }
 }
