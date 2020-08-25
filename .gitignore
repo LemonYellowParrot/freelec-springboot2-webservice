@@ -1,2 +1,4 @@
 # Project exclude paths
 /.gradle/
+# 깃허브에 oauth.properties 올라가는 것 방지
+application-oauth.properties
