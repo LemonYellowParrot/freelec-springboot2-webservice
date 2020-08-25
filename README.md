@@ -1,0 +1,5 @@
+# freelec-springboot2-webservice
+
+## "스프링부트와 AWS로 혼자 구현하는 웹 서비스" 책 참고
+https://github.com/jojoldu/freelec-springboot2-webservice
+링크 참고해서 오류/궁금한 점 생기면 issue로 올려서 해결.
